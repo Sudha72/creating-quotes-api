@@ -18,13 +18,19 @@ connection.once('open', () => {
 
 //schema
 const schema= new mongoose.Schema({
-    name:String
+    quotes:String,
+    author:String,
+    category:String
 })
 
 const modal = mongoose.model('quotes',schema);
 
 app.get('/', async(req,res)=>{
     modal.find({}).then(data => res.json(data));
+})
+
+app.get('/:cat', async(req,res)=>{
+    modal.find({"category":req.params.cat}).then(data=>res.json(data))
 })
 
 
