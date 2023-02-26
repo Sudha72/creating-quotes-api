@@ -1,6 +1,6 @@
 #Link
 
-https://github.com/Sudha72/creating-quotes-api
+https://testapi-qsha.onrender.com
 
 
 #python program to upload lst into mongo db
