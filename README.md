@@ -1,4 +1,5 @@
 #Link
+In SRC folder there is one example How can we use this api in angular ( Bonus => Basic RxJS and Angular Material )
 
 https://testapi-qsha.onrender.com
 
