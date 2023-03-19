@@ -19,6 +19,7 @@ db = client.api    //select database Name in my case db name is api
 
 collection = db['quotes']  // select collection name in my case it is quotes
 
+`
 lst = [
     {
       "quote": "To be, or not to be: that is the question.",
@@ -371,7 +372,7 @@ lst = [
         "category": "Philospy",
       },
      
-  ]
+  ]`
 
 result = collection.insert_many(lst)
 print(result.inserted_ids)
