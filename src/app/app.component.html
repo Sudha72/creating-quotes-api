@@ -1,0 +1,26 @@
+<div class="onload" *ngIf="isLoading">Loading ... .. .</div>
+<div class="container">
+  <mat-card class="example-card" *ngFor="let item of data; index as i">
+    <mat-card-header>
+      <div
+        mat-card-avatar
+        class="example-header-image"
+        style="
+          background-image: url('https://picsum.photos/id/{{220+i}}/600/300');
+        "
+      ></div>
+      <mat-card-title>{{item.author}}</mat-card-title>
+      <mat-card-subtitle>{{item.category}}</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="https://picsum.photos/id/{{220+i}}/600/300"
+      alt="Photo of a {{item.category}}"
+    />
+    <mat-card-content>
+      <p>
+        {{item.quote}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
